@@ -1,4 +1,4 @@
-# consume-restfull-api-with-django
+# desafio-cumplo-jibanez
 
 ## Setup the project
 
