@@ -1,27 +1,34 @@
-# consume-restfull-api-with-django
+# desafio-cumplo-jibanez
 
-## Setup the project
+## Descargar el proyecto
 
 ```shell
-git clone https://github.com/xarala221/consume-restfull-api-with-django.git
-cd consume-restfull-api-with-django
+git clone  https://github.com/jibanez123456/desafio-cumplo-jibanez.git
+cd desafio-cumplo-jibanez
 ```
 
-## Install requirements
+## Configurar el ambiente
 
-Create a new virtual environment
+Create a nuevo virtual enviroment
 
 ```shelll
-virtualenv venv
-source venv/bin/activate
+> py -m venv desafio-cumplo-jibanez
+> cd Scripts
+> activate.bat
 ```
 
-Install packages
+Instalar paquetes
 
 ```shell
-pip install -r requiremnts.txt
+> pip install -r requiremnts.txt
 ```
 
-## Test the application
 
-Open your browser and go to [localhost:8000](http://localhost:800/)
+## Probar la app en LOCAL
+
+Ejecutar en Local
+
+```shell
+> py manage.py runserver
+```
+Ir a...  [localhost:8000](http://localhost:800/)
