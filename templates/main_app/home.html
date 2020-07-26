@@ -1,16 +1,60 @@
 {% extends "base.html" %}
 <!--  -->
 {% block content %}
+<h2>Ingreso de parametros</h2>
+   <br>
+   <br>
+   <br>
+  <form method="get">
+  	<div class="row" style="text-align:center">
+  		<label for="monto">Monto (UF): </label>
+  		<input type="text" id="monto" name="monto"><br><br>
+    </div>
+	<br>
+	<br>
+  	<div class="row" style="text-align:center">
+	  	<label for="plazo">Plazo (días): </label>
+  		<input type="text" id="plazo" name="plazo"><br><br>
+  	</div>
+	<br>
+    <br>
+    <div class="row" style="text-align:center">
+	    <label for="fechax">Fecha (DD-MM-AAAA): </label>
+  		<input type="text" id="fechax" name="fechax"><br><br>
+    </div>
+    <br>
+	<br>
+  	<!--<button type="submit">search on xyz...</button>-->
+  	<input type="submit" value="Buscar en SBIF">
+   </form>
+
+<p>Click en Buscar para ejecutar el proceso...</p>
+
+
 <div class="col-md-6 col-auto">
   <div class="card">
     <div class="card-header">
-      Todos
+      TMC's (tipo - valor - desde - hasta)
+     <html>
+     <!--  {{ data }} -->
+     </html>
     </div>
     <ul class="list-group list-group-flush">
-      {% for todo in data %}
-      <li class="list-group-item">{{ todo.id }} - {{ todo.title }}</li>
+      {% for tmc in data.TMCs %}
+         <li class="list-group-item">{{ tmc.Tipo }} - {{ tmc.Valor }} - {{ tmc.Fecha }} - {{ tmc.Hasta }} </li>
       {% endfor %}
     </ul>
   </div>
+  <div class="card">
+	Parametros:<br>
+	
+  
+	TMC encontrada: {{ tmc_buscada }}<br><br>
+	Datos asociados:<br>
+	Tipo TMC: {{ tipo_tmc_encontrada}}<br>
+	Fecha Desde: {{ fecha_desde }}<br>
+	Fecha Hasta: {{ fecha_hasta }}<br>
+  </div>
+
 </div>
 {% endblock content %}
