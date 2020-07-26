@@ -1,15 +1,15 @@
 # desafio-cumplo-jibanez
 
-## Setup the project
+## Descargar el proyecto
 
 ```shell
 git clone  https://github.com/jibanez123456/desafio-cumplo-jibanez.git
 cd desafio-cumplo-jibanez
 ```
 
-## Install requirements
+## Configurar el ambiente
 
-Create a new virtual environment
+Create a nuevo virtual enviroment
 
 ```shelll
 > py -m venv desafio-cumplo-jibanez
@@ -17,7 +17,7 @@ Create a new virtual environment
 > activate.bat
 ```
 
-Install packages
+Instalar paquetes
 
 ```shell
 > pip install -r requiremnts.txt
@@ -26,7 +26,7 @@ Install packages
 
 ## Probar la app en LOCAL
 
-Install packages
+Ejecutar en Local
 
 ```shell
 > py manage.py runserver
