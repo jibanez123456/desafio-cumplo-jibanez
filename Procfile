@@ -1,1 +1,1 @@
-web: gunicorn home.html 
+web: gunicorn consume_api.wsgi 
